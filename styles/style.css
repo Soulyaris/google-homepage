@@ -1,0 +1,147 @@
+@font-face {
+	font-family: 'Liberation Sans';
+	src: url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&amp;subset=cyrillic,cyrillic-ext") format("woff2");
+}
+
+.search-box-body {
+	font-family: 'Liberation Sans', sans-serif;
+	color: #686868;
+	font-weight: 300;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	min-width: 600px;
+	height: 100%;
+	display: grid;
+	grid-template: 80px 1fr 80px / 1fr;
+	grid-template-areas: "header"
+						 "content"
+						 "footer";
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin: 5px 0;
+	margin-right: 30px;
+	padding: 0;
+	overflow: hidden;
+	height: 30px;
+}
+  
+li {
+	float: left;
+}
+  
+li a {
+	display: inline-block;
+	color: #686868;
+	text-align: center;
+	margin-left: 18px;
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: -1px;
+	height: 30px;
+	line-height: 25px;
+}
+
+.top-right-menu li a {
+	color: #000;
+}
+
+li a:hover {
+	color: gray;
+	text-decoration: underline;
+}
+
+.ddmenu {
+	height: 25px;
+	width: 25px;
+}
+
+.main-content {
+	width: 100%;
+	grid-area: content;
+	text-align: center;
+}
+
+.glogo {
+	margin-top: 120px;
+	width: 272px;
+}
+
+ul.l-bot-menu {
+	float: left;
+}
+
+.country {
+	font-size: 12px;
+	padding-left: 30px;
+	height: 40px;
+}
+
+.bot-menu-lr {
+	height: 40px;
+}
+
+.top-right-menu {
+	grid-area: header;
+	margin-top: 10px;
+}
+
+.bottom-menu {
+	grid-area: footer;
+	background-color: #EEE;
+	height: 80px;
+}
+
+.bottom-menu div {
+	border-top: 1px solid lightgray;
+}
+
+.search-box {
+	margin-top: 20px;
+	height: 50px;
+}
+
+input {
+	width: 540px;
+	height: 35px;
+	font-size: 16px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 25px;
+	border: 0.5px solid lightgray;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	margin: 30px 4px;
+	padding: 0 16px;
+	height: 40px;
+	font-family: 'Liberation Sans', sans-serif;
+	font-size: 14px;
+	letter-spacing: -1px;
+	font-weight: 250;
+}
+
+.login-button {
+	border: 1px solid #4285f4;
+	border-radius: 3px;
+	background-color: #4285f4;
+	color: #fff !important;
+	font-weight: 600;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.l-bot-menu {
+	margin-left: 12px;
+}
